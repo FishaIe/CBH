@@ -34,13 +34,12 @@ javafx {
 }
 
 dependencies {
+    testImplementation 'org.testng:testng:7.1.0'
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
 
 jlink {
